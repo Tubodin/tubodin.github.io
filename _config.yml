@@ -19,10 +19,30 @@ defaults:
     layout: page
 - scope:
     path: ''
+    type: produtos
+  values:
+    layout: produto
+- scope:
+    path: ''
     type: posts
   values:
     layout: post
-description: 
+description: >
+  Atuamos no setor de sistemas hidráulicos desde 1989,
+  com certificação ISO 9001:2008 desde Maio de 2005.
+  Oferecemos uma gama diversificada de conexões, mangueiras 
+  hidráulicas, terminais e abraçadeiras para fixação de tubos.
+  Entre em contato com nosso departamento de vendas.
+endereco:
+- Rua Rio de Janeiro, 381
+- Jardim Casa Grande
+- Diadema - SP - Cep. 09981-730
+telefone:
+  label: (11) 4053-8500
+  number: +551140538500
+facebook_name: /tubodin
+twitter_name: /tubodin
+email: vendas@tubodin.com.br
 baseurl: ''
 url: http://tubodin.com.br
 markdown: kramdown

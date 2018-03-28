@@ -1,0 +1,13 @@
+---
+title: Produtos
+---
+
+{% for p in site.produtos %}
+
+    <article class="wrapper">
+        <h4 class="post-link">
+            <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+        </h4>
+    </article>
+
+{% endfor %}
