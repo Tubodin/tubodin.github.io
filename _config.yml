@@ -2,11 +2,11 @@
 title: Tubodin Industrial Ltda.
 timezone: America/Sao_Paulo
 collections:
-  categorias:
-    title: Categorias
-    output: true
   posts:
     title: Posts
+    output: true
+  produtos:
+    title: Produtos
     output: true
   uploads:
     title: Uploads
