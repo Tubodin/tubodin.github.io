@@ -7,6 +7,11 @@ image:
 - "/uploads/mangueiras_2.jpg"
 - "/uploads/mangueiras_3.jpg"
 - "/uploads/mangueiras_4.jpg"
+- "/uploads/mangueiras_5.jpg"
+- "/uploads/mangueiras_6.jpg"
+- "/uploads/mangueiras_7.jpg"
+- "/uploads/mangueiras_8.jpg"
+- "/uploads/conexoes_hidraulicas_61.jpg"
 ---
 
 Os terminais para mangueiras Tubodin oferecem a solução contra vazamentos e podem ser vendidos individualmente ou já montados na mangueira.
