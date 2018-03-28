@@ -20,7 +20,7 @@ defaults:
   values:
     layout: post
 description: 
-baseurl: ""
+baseurl: ''
 url: http://tubodin.com.br
 markdown: kramdown
 permalink: pretty/
