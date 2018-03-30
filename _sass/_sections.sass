@@ -6,8 +6,11 @@
 
     &hero
         @extend %section-spacing
-        background: #8bb44e url('#{$baseurl}/img/philipp-lublasser-278890.jpg') no-repeat center
-        background: #8bb44e url('#{$baseurl}/img/philipp-lublasser-278890.jpg') no-repeat center / cover
+        background:
+            image: url('#{$baseurl}/img/philipp-lublasser-278890.jpg')
+            repeat: no-repeat
+            position: center
+            size: cover
         .hero-body
             text-shadow: -1px 1px 1px #000
     &github
