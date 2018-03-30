@@ -69,13 +69,16 @@ li
   >ul, >ol 
     margin-bottom: 0
 
-h1, h2, h3, h4, h5, h6 
+h1, h2, h3, h4, h5, h6
+  font-family: $title-font-family
   font-weight: $base-font-weight
   line-height: 1.1
 
 @for $i from 1 through 6
   h#{$i}
     font-size: $base-font-size * 1.5 + $base-font-size / $i
+    +media-query($on-laptop)
+      font-size: $base-font-size * 1.2 + $base-font-size / $i
 
 %transition
   -webkit-backface-visibility: hidden

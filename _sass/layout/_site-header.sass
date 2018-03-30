@@ -3,14 +3,20 @@ $header-height: 52px
 .site-header
     min-height: $header-height
     position: relative
+    a
+        &:hover, &:focus, &:active
+            color: $grey-color-dark
+            text-decoration: none
 
 .site-title
     float: left
-    line-height: $header-height
+    font-family: $title-font-family
+    line-height: 1
     img, svg
         display: inline-block
+        vertical-align: middle
     svg
-        display: block
+        display: inline-block
         width: $header-height - 12
         height: $header-height
 
@@ -21,9 +27,12 @@ $header-height: 52px
     .menu-icon 
         display: none
 
-    .page-link 
-        color: $text-color
+    .page-link
+        font-size: $small-font-size
+        font-weight: 600
         line-height: $base-line-height
+        text-transform: uppercase
+        color: $grey-color
         margin-left: 20px
 
     @include media-query($on-palm) 
