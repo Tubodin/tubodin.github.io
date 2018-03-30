@@ -1,0 +1,32 @@
+
+<div id="contato" data-modal="" data-grid="row center">
+    <form action="server.tubodin.com.br/enviar_email.php" method="post" class="wrapper">
+        <div data-grid="row spacing start">
+            <h4 data-modal-title>Fale conosco</h4>
+            <a href="#×" data-cell="shrink" data-btn="link" data-modal-close>&times;</a>
+        </div>
+        <p>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required placeholder="digite seu nome...">
+        </p>
+        <div data-grid="spacing">
+            <p>
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" required placeholder="(99) 9 0000-0000">
+            </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" required placeholder="nome@dominio.com">
+            </p>
+        </div>
+        <p>
+            <label for="msg">Mensagem</label>
+            <textarea name="msg" id="msg" cols="30" rows="3" placeholder="digite sua mensagem..."></textarea>
+        </p>
+        <p data-grid="center spacing justify">
+            <button data-cell="shrink fill order-1">Enviar</button>
+            <a href="tel:{{ site.telefone.number }}" data-cell="shrink">{{ site.telefone.label }}</a>
+            <a href="mailto:{{ site.email }}" data-cell="shrink">{{ site.email }}</a>
+        </p>
+    </form>
+</div>
