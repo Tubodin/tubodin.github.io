@@ -43,7 +43,7 @@ telefone:
 facebook_name: "/tubodin"
 twitter_name: "/tubodin"
 email: vendas@tubodin.com.br
-baseurl: ''
+baseurl: 
 url: http://tubodin.com.br
 markdown: kramdown
 permalink: pretty/
@@ -55,3 +55,6 @@ exclude:
 - gulpfile.js
 - npm-debug.log
 - package.json
+catalogos:
+- nome: Mangueiras e Terminais para Tubos Flagelados
+  file: 
