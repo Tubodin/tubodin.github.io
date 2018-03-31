@@ -2,14 +2,14 @@
   padding: 10px
   border: 1px solid $grey-color-light
   border-radius: 4px
-  background-color: #fff
+  background-color: $grey-color-light
   transition: 0.2s ease-in-out
   backface-visibility: hidden
   outline: none
   overflow: visible // normalize.css
   &:focus
-    border-color: $grey-color
-    box-shadow: 0 2px 10px 0 rgba($brand-color, .5)
+    background-color: #fff
+    border-bottom-color: $brand-color
 
 %form-inputs
   width: 100%

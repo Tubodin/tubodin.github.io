@@ -21,6 +21,9 @@
       </div>
 
       <nav data-cell="shrink">
+        <p>
+          <a href="{{ site.baseurl }}/">Início</a>
+        </p>
 
         {% for my_page in site.pages %}
           {% if my_page.nav-title %}
@@ -31,10 +34,10 @@
         {% endfor %}
 
         <p>
-          <a class="page-link" href="{{ site.baseurl }}/produtos/">Produtos</a>
+          <a href="{{ site.baseurl }}/produtos/">Produtos</a>
         </p>
         <p>
-          <a class="page-link" href="#contato" data-btn>Orçamento</a>
+          <a href="#contato" data-btn>Orçamento</a>
         </p>
 
       </nav>
