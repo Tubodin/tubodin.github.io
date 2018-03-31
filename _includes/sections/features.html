@@ -1,22 +1,26 @@
 
 <header class="wrapper page-header">
-    <h3>Nossos produtos</h3>
+    <div data-grid="row wrap spacing">
+        <h3>Nossos produtos</h3>
+        <p data-cell="shrink"><a href="#contato" data-btn="">Solicite um orçamento</a></p>
+    </div>
 </header>
 
 <div class="wrapper large" data-grid="spacing">
 
     {% for p in site.produtos %}
 
-        <article data-cell="1of3 fill" data-grid="column justify">
+        <article data-cell="1of3 fill">
 
-            <div data-cell="shrink fill">
+            <div class="feature-img" data-cell="shrink fill">
                 <img src="{{ site.baseurl }}{{ p.image[0] }}" alt="{{ p.title }}">
             </div>
             <h4>
                 <small>{{ p.title }}</small>
             </h4>
             <p>
-                {{ p.content | strip_html | truncate_words: 10 }}
+                {{ p.content | strip_html | truncatewords: 20 }}
+                <a href="{{ site.baseurl }}{{ p.url }}" data-text="nbr">Saiba mais »</a>
             </p>
 
         </article>

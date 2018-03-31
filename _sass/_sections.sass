@@ -17,14 +17,26 @@
         @extend %section-spacing
     &features
         article
-            text-align: center
             +media-greater($on-palm)
-                max-width: 16em
+                text-align: center
+            +media-query($on-laptop)
+                font-size: $small-font-size
+            +media-query($on-palm)
+                margin-top: $spacing-unit / 2
+                padding-top: $spacing-unit / 2
+                border-top: 1px solid $grey-color-light
+                .feature-img
+                    float: left
+                    width: 120px
+                    margin-right: $spacing-unit / 2
+                    ~ *
+                        margin-top: 0
+                        overflow: hidden
         svg
             max-width: 80%
             +media-query($on-palm)
                 max-width: 60%
-    &about
+    &catalogos
         @extend %section-spacing
         line-height: 1.6
         p
