@@ -6,32 +6,33 @@ layout: default
     <div data-grid="spacing">
 
         <div data-cell="2of3">
-            <header class="post-header wrapper">
+
+            <header class="post-header">
                 <h1 class="post-title">{{ page.title }}</h1>
             </header>
 
-            <div class="post-content">
-                {{ content }}
+            {{ content }}
 
-                <hr>
+            <hr>
 
-                <div data-grid="row cols-3 spacing">
-                    {% for img in page.image %}
-                    <div data-cell="shrink">
-                        <img src="{{ site.baseurl }}{{ img }}" alt="{{ page.title }}">
-                    </div>
-                    {% endfor %}
+            <div data-grid="row cols-3 spacing">
+                {% for img in page.image %}
+                <div data-cell="shrink">
+                    <img src="{{ site.baseurl }}{{ img }}" alt="{{ page.title }}">
                 </div>
-
+                {% endfor %}
             </div>
+
         </div>
 
         <nav class="nav-rel" data-cell="1of3">
 
+            <h5>Produtos</h5>
+
             <ul class="seamless">
                 {% for p in site.produtos %}
 
-                <li>
+                <li class="post-item">
                     <h4 class="post-link">
                         <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
                     </h4>
@@ -39,6 +40,12 @@ layout: default
 
                 {% endfor %}
             </ul>
+
+            <p class="post-item">
+                <a href="#contato" data-btn="">Faça um orçamento
+                    <span data-text="nbr">agora mesmo</span>
+                </a>
+            </p>
 
         </nav>
 

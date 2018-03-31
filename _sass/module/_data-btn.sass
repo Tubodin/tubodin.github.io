@@ -17,6 +17,16 @@
         text-decoration: none
         color: #fff
         box-shadow: 0 0 8px 0 black
+    
+    +variant(download)
+        padding: 15px
+        +media-greater($on-palm)
+            font-size: $small-font-size
+        .icon, .icon-colored
+            min-width: 50px
+            svg
+                width: 90%
+                height: 100%
 
     +variant(link)
 

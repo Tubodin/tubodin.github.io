@@ -7,7 +7,7 @@
         {% for c in site.catalogos %}
     
         <p data-cell="shrink fill">
-            <a href="{{ site.baseurl }}{{ c.file }}" target="_blank" data-btn data-text="left">
+            <a href="{{ site.baseurl }}{{ c.file }}" target="_blank" data-btn="download" data-text="left">
                 <span data-grid="row small-spacing center">
                     <span data-cell="1of4" class="icon-colored">{% include svg/pdf.svg %}</span>
                     <span data-cell="3of4 shrink">{{ c.nome }}</span>

@@ -3,6 +3,11 @@ title: Produtos
 ---
 
 <div class="wrapper">
+
+    <header data-grid="end">
+        <p data-cell="shrink"><a href="#contato" data-btn>Solicite um orçamento</a></p>
+    </header>
+
     <section data-grid="cols-2 spacing">
         
         {% for p in site.produtos %}
@@ -28,4 +33,9 @@ title: Produtos
         {% endfor %}
     
     </section>
+
 </div>
+
+<footer>
+    {% include sections/catalogos.html %}
+</footer>
