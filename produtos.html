@@ -16,7 +16,7 @@ title: Produtos
                 <div data-grid="row wrap">
         
                 {% for img in p.image %}
-                    <div data-cell="shrink fill">
+                    <div data-cell="shrink">
                         <img src="{{ site.baseurl }}{{ img }}" alt="Imagem de {{ p.title }}" width="80">
                     </div>
                 {% endfor %}

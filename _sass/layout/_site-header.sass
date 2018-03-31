@@ -39,16 +39,14 @@ $header-height: 52px
         position: absolute
         top: 9px
         right: $spacing-unit / 2
-        background-color: $background-color
-        border-radius: 5px
-        text-align: right
         .menu-icon
             display: block
             float: right
+            margin-bottom: 20px
+            padding-top: 10px
             width: 36px
             height: 36px
             line-height: 0
-            padding-top: 10px
             text-align: center
             >svg
                 width: 18px
@@ -57,14 +55,40 @@ $header-height: 52px
                     fill: $grey-color-dark
 
         .trigger 
+            position: relative
             clear: both
             display: none
+            padding: 10px
+            background-color: $grey-color-light
+            border-radius: 5px
 
         &:hover .trigger 
             display: block
-            padding-bottom: 5px
+            box-shadow: -5px 5px 5px -5px rgba(#000, .5)
+            -webkit-animation: get-up .3s ease-in-out forwards
+            animation: get-up .6s ease-in-out forwards
+            &:before
+                content: ''
+                position: absolute
+                top: -10px
+                right: 10px
+                border-style: solid
+                border-width: 0 10px 10px
+                border-color: transparent transparent $grey-color-light
+
+        @keyframes get-up
+            0%
+                transform: translateY(-10px)
+                opacity: 0
+            100%
+                transform: translateY(0)
+                opacity: 1
 
         .page-link
             display: block
-            padding: 5px 10px
-            margin-left: 20px
+            padding: 15px 30px
+            margin: 0
+            border-radius: 3px
+            &:hover, &:focus, &:active
+                color: #fff
+                background-color: $brand-color

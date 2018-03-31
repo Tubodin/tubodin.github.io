@@ -21,13 +21,15 @@ A Tubodin tem um compromisso com o meio ambiente e com a qualidade, e por isso n
 
 Somos certificados ISO 9001:2008 desde Maio de 2005.
 
-<div data-grid="spacing">
-    <div data-cell="2of3">
-        <p>
-            Possuímos CRCC para atender obras da Petrobras.
-        </p>
+<div class="wrapper">
+    <div data-grid="spacing">
+        <div data-cell="2of3">
+            <p>
+                Possuímos CRCC para atender obras da Petrobras.
+            </p>
+        </div>
+        <div data-cell="shrink"><img src="{{ site.baseurl }}/uploads/logo-petrobras.png" alt="Petrobras BR"></div>
     </div>
-    <div data-cell="shrink"><img src="{{ site.baseurl }}/uploads/logo-petrobras.png" alt="Petrobras BR"></div>
 </div>
 
 A Tubodin atende qualquer norma de mercado de acordo com a necessidade do cliente.
