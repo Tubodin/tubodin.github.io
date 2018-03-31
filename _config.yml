@@ -33,6 +33,11 @@ description: 'Atuamos no setor de sistemas hidráulicos desde 1989, com certific
   contato com nosso departamento de vendas.
 
 '
+catalogos:
+- nome: Conexões e Adaptadores para Tubos Flagelados
+  file: 
+- nome: Mangueiras e Terminais para Tubos Flagelados
+  file: 
 endereco:
 - Rua Rio de Janeiro, 381
 - Jardim Casa Grande
@@ -55,8 +60,3 @@ exclude:
 - gulpfile.js
 - npm-debug.log
 - package.json
-catalogos:
-- nome: Conexões e Adaptadores para Tubos Flagelados
-  file: 
-- nome: Mangueiras e Terminais para Tubos Flagelados
-  file: 
