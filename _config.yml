@@ -56,5 +56,7 @@ exclude:
 - npm-debug.log
 - package.json
 catalogos:
+- nome: Conexões e Adaptadores para Tubos Flagelados
+  file: 
 - nome: Mangueiras e Terminais para Tubos Flagelados
   file: 
