@@ -1,10 +1,45 @@
 <footer class="site-footer">
 
   <div class="wrapper">
+    
+    <div data-grid="spacing">
+      <h2 class="footer-heading" data-cell="shrink">{{ site.title }}</h2>
+      <p data-cell="shrink">
+        <small>
+          {% for linha in site.endereco %}{{ linha }} {% endfor %} - 
+          <a href="tel:{{ site.telefone.number }}">{{ site.telefone.label }}</a>
+        </small>
+      </p>
+    </div>
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <div data-grid="spacing">
 
-    <p>{{ site.description }}</p>
+      <div data-cell="shrink"><img src="favicon.png" alt="{{ site.title }}"></div>
+
+      <div data-cell>
+        <p>{{ site.description }}</p>
+      </div>
+
+      <nav data-cell="1of2">
+
+        {% for my_page in site.pages %}
+          {% if my_page.nav-title %}
+          <p>
+            <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.nav-title }}</a>
+          </p>
+          {% endif %}
+        {% endfor %}
+
+        <p>
+          <a class="page-link" href="{{ site.baseurl }}/produtos/">Produtos</a>
+        </p>
+        <p>
+          <a class="page-link" href="#contato" data-btn>Orçamento</a>
+        </p>
+
+      </nav>
+
+    </div>
 
   </div>
 

@@ -1,0 +1,16 @@
+
+<div class="wrapper">
+
+    <h3>Baixe os nossos catálogos</h3>
+    
+    <div data-grid="cols-3 spacing start">
+        {% for c in site.catalogos %}
+    
+        <p data-cell="shrink fill">
+            <a href="{{ site.baseurl }}{{ c.file }}" target="_blank" data-btn>{{ c.nome }}</a>
+        </p>
+    
+        {% endfor %}
+    </div>
+    
+</div>

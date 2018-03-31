@@ -1,22 +1,26 @@
 
-<div class="wrapper large" data-grid>
+<header class="wrapper page-header">
+    <h3>Nossos produtos</h3>
+</header>
 
-    <article class="wrapper" data-cell="1of3 fill" data-grid="column justify">
-        <div data-cell="shrink fill"></div>
-        <h4>Feature</h4>
-        <p>Illum rem autem voluptatum inventore quam.</p>
-    </article>
+<div class="wrapper large" data-grid="spacing">
 
-    <article class="wrapper" data-cell="1of3 fill" data-grid="column justify">
-        <div data-cell="shrink fill"></div>
-        <h4>Feature</h4>
-        <p>Perspiciatis quos ea blanditiis iste beatae sed.</p>
-    </article>
+    {% for p in site.produtos %}
 
-    <article class="wrapper" data-cell="1of3 fill" data-grid="column justify">
-        <div data-cell="shrink fill"></div>
-        <h4>Feature</h4>
-        <p>Ut sit dolorem nostrum corrupti quo a ab!</p>
-    </article>
+        <article data-cell="1of3 fill" data-grid="column justify">
+
+            <div data-cell="shrink fill">
+                <img src="{{ site.baseurl }}{{ p.image[0] }}" alt="{{ p.title }}">
+            </div>
+            <h4>
+                <small>{{ p.title }}</small>
+            </h4>
+            <p>
+                {{ p.content | strip_html | truncate_words: 10 }}
+            </p>
+
+        </article>
+
+    {% endfor %}
 
 </div>

@@ -1,15 +1,10 @@
 .hero
 
-    padding-left: $spacing-unit
-    padding-right: $spacing-unit
     background-color: $hero-color
     color: #fff
     +media-query($on-laptop)
         padding-left: $spacing-unit / 2
         padding-right: $spacing-unit / 2
-        .wrapper
-            padding-left: 0
-            padding-right: 0
 
     a
         color: $compl-color
@@ -22,6 +17,11 @@
     
     &.dark
         background-color: $grey-color-dark
+
+        [data-btn]
+            background-color: $brand-color
+            &:hover, &:focus, &:active
+                box-shadow: 0 0 8px 0 #000
     
     &.light
         background-color: $grey-color-light

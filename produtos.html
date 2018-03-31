@@ -2,12 +2,30 @@
 title: Produtos
 ---
 
-{% for p in site.produtos %}
-
-    <article class="wrapper">
-        <h4 class="post-link">
-            <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
-        </h4>
-    </article>
-
-{% endfor %}
+<div class="wrapper">
+    <section data-grid="cols-2 spacing">
+        
+        {% for p in site.produtos %}
+        
+            <article class="post-item">
+        
+                <h4 class="post-link">
+                    <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+                </h4>
+        
+                <div data-grid="row wrap">
+        
+                {% for img in p.image %}
+                    <div data-cell="shrink fill">
+                        <img src="{{ site.baseurl }}{{ img }}" alt="Imagem de {{ p.title }}" width="80">
+                    </div>
+                {% endfor %}
+        
+                </div>
+        
+            </article>
+        
+        {% endfor %}
+    
+    </section>
+</div>
